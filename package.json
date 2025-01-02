@@ -1,0 +1,15 @@
+{
+  "name": "vue-virtual-joystick-monorepo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "pnpm --dir ./packages/vue-virtual-joystick build",
+    "clean": "rm -rf node_modules && rm -rf packages/**/node_modules",
+    "dev": "pnpm --dir ./packages/vue-virtual-joystick dev",
+    "lint": "eslint --ext .ts,.tsx,.js,.jsx,.vue --quiet ./packages"
+
+  },
+  "dependencies": {
+    "vue-virtual-joystick": "workspace:*"
+  }
+}
